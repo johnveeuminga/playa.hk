@@ -1,0 +1,44 @@
+#navbar{
+	position: absolute;
+	z-index: 1001;
+	width: 100%;
+	margin-top: 1rem;
+	text-transform: uppercase;
+	font-family: $font-family-secondary;
+
+	svg{
+		width: 100px;
+	}
+
+	.nav{
+		.nav-link{
+			color: #FFF;
+			padding: 0 1rem;
+		}
+	}
+
+	.navbar-toggler{
+		border: none !important;
+
+		.fa{
+			color: #fff;
+			font-size: 1.3rem;
+		}
+	}
+
+	.navbar-collapse{
+		@media (max-width: 767px) {
+			background: #FFF;
+			margin: 0 -1rem;
+			margin-top: 1rem;
+			text-align:center;
+
+			.nav-link{
+				color:#49cb74;
+				padding: 1rem;
+				border-bottom: none;
+			}
+		}
+	}
+
+}

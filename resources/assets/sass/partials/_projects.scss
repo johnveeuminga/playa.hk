@@ -1,0 +1,62 @@
+#projects{
+
+	clear: both; 
+	.project-tile-image{
+		width: calc(25% - 0px);
+		min-height: 200px;
+		background: transparent no-repeat no-repeat center center;
+		-webkit-background-size: cover;
+		background-size: cover;
+		float: left;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		border-right: 2px solid #fff;
+		position: relative;
+
+		&:last-child{
+			border-right: none;
+			width: 25%;
+		}
+		
+		.overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: all 0.5s ease;
+			background-color: #000;
+
+			.overlay-button{
+				position: absolute;
+				color: white;
+				top: 50%;
+				left: 50%;
+				text-transform: uppercase;
+				background-color: transparent !important;
+				border: 2px solid #fff;
+				border-radius: 10;
+				transform: translate(-50%, -50%);
+				 -ms-transform: translate(-50%, -50%);
+			}
+		}
+
+		&:hover .overlay{
+			opacity: 0.75;
+		}
+
+		@media (max-width: 767px) {
+			width: 100% !important;
+		}
+
+		@media (max-width: 540px) {
+			min-height: 155px !important;
+		}
+
+	}
+
+	
+}

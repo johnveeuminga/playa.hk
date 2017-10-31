@@ -1,0 +1,21 @@
+#blog-posts{
+	background-color: #1e73be;
+	width: 100%;
+	padding: 1.2rem 0;
+	color: #FFF;
+	text-align: center;
+	font-size: $font-family-secondary;
+
+	.carousel{
+		max-width: 70%;
+		margin: 0 auto;
+		a{
+			color: #FFFFFF !important;
+		}
+
+		@media (max-width: 767px) {
+			max-width: 100%;
+		}
+	}
+
+}
